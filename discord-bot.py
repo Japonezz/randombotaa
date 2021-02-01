@@ -1,5 +1,6 @@
 import random
 import discord
+import os
 
 from discord.ext import commands
 prefix = "/"
@@ -16,4 +17,4 @@ async def roll(ctx):
 
 
 
-bot.run("ODAxMDkxMTc1ODg0NTIxNDgw.YAboSw.UtBY5bCs93-Cn2VrFJOB4LKGQas")
+token = os.environ.get('BOT_TOKEN')
